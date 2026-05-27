@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular App
-        run: npm run build --configuration production -- --base-href=/TCC-Web/
+        run: npx ng build --configuration production --base-href=/TCC-Web/
         env:
           NODE_OPTIONS: --max-old-space-size=4096
 
