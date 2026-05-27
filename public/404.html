@@ -23,26 +23,48 @@
   <script>
     // Robust redirect for Angular SPA on GitHub Pages
     (function() {
-      const repoName = '/TCC-Web';
+    //   const repoName = '/TCC-Web';
+    //   let path = window.location.pathname;
+    //   const search = window.location.search;
+    //   const hash = window.location.hash;
+
+    //   // Remove repo name from the beginning if present
+    //   if (path.startsWith(repoName)) {
+    //     path = path.substring(repoName.length);
+    //   }
+
+    //   // Clean the path
+    //   if (path === '' || path === '/') {
+    //     path = '/';
+    //   }
+
+    //   // Build the final URL
+    //   const redirectUrl = repoName + path + search + hash;
+
+    //   // Redirect to index.html with the full route
+    //   window.location.replace(redirectUrl);
+
+      const baseHref = '/TCC-Web';
       let path = window.location.pathname;
       const search = window.location.search;
       const hash = window.location.hash;
 
-      // Remove repo name from the beginning if present
-      if (path.startsWith(repoName)) {
-        path = path.substring(repoName.length);
+      // Remove base href if it's already in the path
+      if (path.startsWith(baseHref)) {
+        path = path.substring(baseHref.length);
       }
 
-      // Clean the path
-      if (path === '' || path === '/') {
-        path = '/';
+      // Prevent loop: if we're already on index.html, stop
+      if (path.includes('index.html') || path === baseHref + '/') {
+        console.log('Already on index.html');
+        return;
       }
 
-      // Build the final URL
-      const redirectUrl = repoName + path + search + hash;
-
-      // Redirect to index.html with the full route
-      window.location.replace(redirectUrl);
+      // Build final URL and redirect to index.html
+      const finalPath = baseHref + path + search + hash;
+      
+      // Important: Redirect to index.html explicitly
+      window.location.replace(baseHref + '/index.html' + (path ? '?path=' + encodeURIComponent(path) : '') + search + hash);
     })();
   </script>
 </body>
