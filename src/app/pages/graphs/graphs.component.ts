@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-graphs',
   imports: [],
   templateUrl: './graphs.component.html',
-  styleUrl: './graphs.component.css'
+  styleUrl: './graphs.component.scss'
 })
 export class GraphsComponent {
 

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-xgboost',
   imports: [],
   templateUrl: './xgboost.component.html',
-  styleUrl: './xgboost.component.css'
+  styleUrl: './xgboost.component.scss'
 })
 export class XgboostComponent {
 

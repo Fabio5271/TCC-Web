@@ -6,7 +6,7 @@ import { SidebarComponent } from "./layout/sidebar/sidebar.component";
   selector: 'app-root',
   imports: [RouterOutlet, SidebarComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'tcc-web';
