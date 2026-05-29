@@ -1,0 +1,25 @@
+<h3 class="page-title">Análise Preditiva de Dados Climáticos X Doenças Respiratórias com XGBoost</h3>
+
+<section>
+    <h4 class="section-title mb-3">Previsão de Ocorrências Diárias de Doenças Respiratórias</h4>
+    <img class="graph" src="xgboost-act-vs-pred.png" alt="Gráfico Previsão XGBoost">
+    <p>Este gráfico apresenta a comparação entre os Casos Reais diários de doenças respiratórias (linha azul) e os Casos
+        Previstos utilizando o modelo preditivo XGBoost (linha laranja). Observa-se que, mesmo levando em conta somente
+        fatores climáticos e o número de casos em dias passados, o modelo XGBoost consegue capturar com precisão a
+        tendência geral e a sazonalidade dos dados, suavizando somente os valores extremos, indicando uma forte relação
+        entre clima e doenças respiratórias.
+    </p>
+</section>
+<div class="spacer-15"></div>
+<section>
+    <h4 class="section-title mb-3">Fatores que Mais Influenciam no Número de Casos Diários</h4>
+    <div class="img-container nowrap">
+        <img class="graph" src="xgboost-top-feat-1-8.png" alt="Fatores Mais Importantes XGBoost">
+        <img class="graph" src="xgboost-top-feat-9-16.png" alt="Fatores Mais Importantes XGBoost">
+    </div>
+    <p>Aqui estão representados os fatores (dados) mais importantes, que mais influenciaram na previsão do modelo
+        XGBoost. Observa-se que o número de casos de dias anteriores é um fator extremamente influente, seguido pela
+        umidade relativa do ar nos útimos dias, pressão atmosférica, velocidade do vento, e dados de temperatura.</p>
+</section>
+
+<!-- <div class="colortest"></div> -->
