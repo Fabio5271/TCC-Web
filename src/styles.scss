@@ -8,6 +8,8 @@ main {
   display: flex;
   height: 100vh;
   overflow: hidden;
+  font-family: Aleo, "Noto Serif", "Times New Roman", serif;
+  font-size: 17px;
 }
 
 section {
@@ -41,6 +43,7 @@ section {
 .nav-item {
   padding: 12px 1.5rem;
   color: #bdc3c7;
+  font-family: Aleo !important;
   text-decoration: none;
   transition: all 500ms;
   border-left: 4px solid #2c3e50;
@@ -53,6 +56,11 @@ section {
   }
 }
 
+.main-content {
+  background: #f8f9fa; // #222120;
+  overflow-y: auto;
+}
+
 .page-content {
   flex: 1;
   padding: 1.2rem 1.6rem;
@@ -61,14 +69,10 @@ section {
   color: #222120; // #d8d9da;
 }
 
-.page-title {
-  margin-bottom: 1rem;
-}
-
 .graph {
   max-width: 100%;
   min-width: 10%;
-  border-radius: 7px;
+  border-radius: 17px;
 }
 
 .img-container {
@@ -77,13 +81,15 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: space-evenly;
+  margin: 0.4rem 0;
 
   &>* {
     flex-shrink: 1;
   }
 }
 
-.dyn-img-cont>img {
+.dyn-img-cont img {
   flex: 1 1 25rem;
   max-width: 35rem;
 }
@@ -96,6 +102,10 @@ section {
   max-width: 50%;
 }
 
+.my-1 {
+  margin: 0.1rem 0;
+}
+
 .mb-3 {
   margin-bottom: 0.3rem;
 }
@@ -106,6 +116,21 @@ section {
 
 .mb-5 {
   margin-bottom: 0.5rem;
+}
+
+.spacer-1 {
+  width: 100%;
+  height: 0.1rem;
+}
+
+.spacer-2 {
+  width: 100%;
+  height: 0.2rem;
+}
+
+.spacer-5 {
+  width: 100%;
+  height: 0.5rem;
 }
 
 .spacer-10 {
@@ -126,4 +151,9 @@ section {
 .spacer-20 {
   width: 100%;
   height: 2rem;
+}
+
+.spacer-30 {
+  width: 100%;
+  height: 3rem;
 }

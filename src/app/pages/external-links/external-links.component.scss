@@ -1,0 +1,31 @@
+.links-container {
+    gap: 0.7rem;
+}
+
+.links-container img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: fill;
+}
+
+.links-container .link-box {
+    flex: 1 1 15rem;
+    max-width: 35rem;
+    min-width: 10%;
+}
+
+.link-box {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: unset;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img-label {
+    width: fit-content;
+    text-align: center;
+    margin-top: 0.2rem;
+}

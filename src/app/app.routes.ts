@@ -14,6 +14,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/xgboost/xgboost.component').then(m => m.XgboostComponent)
     },
     {
+        path: 'links',
+        loadComponent: () => import('./pages/external-links/external-links.component').then(m => m.ExternalLinksComponent)
+    },
+    {
         path: '**',
         redirectTo: 'about'
     }
