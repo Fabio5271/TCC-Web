@@ -10,13 +10,32 @@
 <section>
     <h4 class="section-title mb-3">Fatores Mais Influentes vs Número de Casos</h4>
     <p>Aqui estão representados os fatores (dados) mais importantes, que mais influenciaram na previsão do modelo
-        XGBoost. Cada ponto nos gráficos representa a medida do fator e o número de casos observados em um dia.</p>
-    <div class="img-container dyn-img-cont">
-        <img class="graph" src="umd-15d-cases.png" alt="">
-        <img class="graph" src="min-press-cases.png" alt="">
-        <img class="graph" src="min-umd-15d-cases.png" alt="">
-        <img class="graph" src="wind-5d-cases.png" alt="">
-        <img class="graph" src="max-temp-10d-cases.png" alt="">
-        <img class="graph" src="var-temp-ext-10d-cases.png" alt="">
+        XGBoost. Cada ponto nos gráficos representa a medida do determinado fator e o número de casos observados em um
+        dia.</p>
+    <div class="img-container dyn-img-cont graphs-container">
+        <div class="graph-box">
+            <img class="graph" src="umd-15d-cases.png" alt="Umidade rel. méd. últ. 15d">
+            <span class="img-label">Umidade relativa média - últimos 15 dias</span>
+        </div>
+        <div class="graph-box">
+            <img class="graph" src="min-press-cases.png" alt="Pressão atm. mín.">
+            <span class="img-label">Pressão atmosférica mínima no dia</span>
+        </div>
+        <div class="graph-box">
+            <img class="graph" src="min-umd-15d-cases.png" alt="Umidade rel. mín. últ. 15d">
+            <span class="img-label">Umidade relativa mínima - últimos 15 dias</span>
+        </div>
+        <div class="graph-box">
+            <img class="graph" src="wind-5d-cases.png" alt="Vento, vel. méd. últ. 5d">
+            <span class="img-label">Velocidade média do vento - últimos 5 dias</span>
+        </div>
+        <div class="graph-box">
+            <img class="graph" src="max-temp-10d-cases.png" alt="Temp. máxima, últ. 10d">
+            <span class="img-label">Temperatura máxima - últimos 10 dias</span>
+        </div>
+        <div class="graph-box">
+            <img class="graph" src="var-temp-ext-10d-cases.png" alt="Var. temp. mín-máx últ. 10d">
+            <span class="img-label">Variação entre extremos da temp. - últimos 10 dias</span>
+        </div>
     </div>
 </section>

@@ -8,13 +8,10 @@
     object-fit: fill;
 }
 
-.links-container .link-box {
+.link-box {
     flex: 1 1 15rem;
     max-width: 35rem;
     min-width: 10%;
-}
-
-.link-box {
     height: fit-content;
     display: flex;
     flex-direction: column;

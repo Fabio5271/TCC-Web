@@ -12,10 +12,6 @@ main {
   font-size: 17px;
 }
 
-section {
-  margin-bottom: 0.7rem;
-}
-
 .sidebar {
   height: 100vh;
   min-height: 100vh;
@@ -63,10 +59,14 @@ section {
 
 .page-content {
   flex: 1;
-  padding: 1.2rem 1.6rem;
+  padding: 1.4rem 1.6rem;
   overflow-y: auto;
   background: #f8f9fa; // #222120;
   color: #222120; // #d8d9da;
+}
+
+.section-title {
+  margin-bottom: 0.1rem;
 }
 
 .graph {
