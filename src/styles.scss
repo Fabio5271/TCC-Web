@@ -53,16 +53,17 @@ main {
 }
 
 .main-content {
-  background: #f8f9fa; // #222120;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
   overflow-y: auto;
 }
 
 .page-content {
   flex: 1;
   padding: 1.4rem 1.6rem;
-  overflow-y: auto;
-  background: #f8f9fa; // #222120;
-  color: #222120; // #d8d9da;
+  background: #f8f9fa;
+  color: #222120;
 }
 
 .section-title {
