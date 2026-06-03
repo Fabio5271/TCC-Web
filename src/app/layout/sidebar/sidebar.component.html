@@ -1,7 +1,9 @@
-<div class="sidebar">
+<div class="sidebar" [class.collapsed]="isCollapsed()">
   <div class="title">
     <h2>TCC - Fábio Martins e Felipe Maciel</h2>
   </div>
+
+  <div class="divider"></div>
   
   <nav class="nav-menu">
     <a routerLink="/about" routerLinkActive="active" class="nav-item">

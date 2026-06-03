@@ -1,8 +1,58 @@
 .header-box {
-  padding: 1.2rem 1.6rem;
-  background: rgba($color: #2c3e50, $alpha: 0.1)
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  background: rgba($color: #2c3e50, $alpha: 0.1);
+  // container-type: inline-size;
 }
 
 .page-title {
   color: #253544;
+  width: 100%;
+  margin: 1.2rem 0.5rem 1.2rem 1.6rem;
+  text-wrap: wrap;
+  overflow: hidden;
+}
+
+.sidebar-toggle {
+  margin: auto 0.7rem auto 0;
+  padding: 0.3rem 0.7rem 0.4rem 0.7rem;
+  border: none;
+  background: none;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #253544;
+  transition: background-color 300ms ease;
+
+  &:hover {
+    background: rgba($color: #2c3e50, $alpha: 0.1);
+  }
+}
+
+@media (width < 540px) {
+  .page-title {
+    &.not-full-width {
+      text-wrap: nowrap;
+      animation: none;
+      overflow: hidden;
+    }
+  }
+
+  .page-title {
+    text-wrap: nowrap;
+    animation: enable-wrap 0s ease 750ms forwards;
+  }
+}
+
+@keyframes enable-wrap {
+  to {
+    text-wrap: wrap;
+  }
+}
+
+@keyframes disable-wrap {
+  to {
+    text-wrap: nowrap;
+  }
 }

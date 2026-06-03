@@ -1,0 +1,63 @@
+.sidebar {
+  padding: 0;
+  min-height: 100vh;
+  height: 100vh;
+  width: min-content;
+  max-width: 15rem;
+  background: #2c3e50;
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: max-width 0.7s ease;
+
+  &.collapsed {
+    max-width: 0px;
+    overflow: hidden;
+    transition: max-width 0.7s 0.1s ease;
+
+    .title {
+      opacity: 0;
+      max-height: 0px;
+      transition:
+        opacity 0.3s ease,
+        max-height 0.3s 0.1s ease;
+    }
+  }
+
+  .title {
+    max-height: 9rem;
+    padding: 1.1rem 1.5rem;
+    text-wrap-mode: wrap;
+    overflow: hidden;
+    transition:
+      opacity 0.3s 0.4s ease,
+      max-height 0.3s 0.3s ease;
+  }
+}
+
+.divider {
+  background: rgba(255, 255, 255, 0.1);
+  height: 1px;
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  text-wrap-mode: nowrap;
+}
+
+.nav-item {
+  padding: 12px 1.5rem;
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: all 500ms;
+
+  &:hover,
+  &.active {
+    background: #34495e;
+    color: white;
+    box-shadow: inset 4px 0 #3498db;
+  }
+}
