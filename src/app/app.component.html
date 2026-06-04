@@ -1,9 +1,13 @@
 <main>
   <app-sidebar></app-sidebar>
-  <div class="main-content">
+  <div class="main-content" #mainContent>
     <app-header></app-header>
     <div class="page-content">
       <router-outlet />
     </div>
+    <button class="sidebar-toggle" (click)="toggleSidebar()">
+      @if (isSidebarCollapsed()) { <img src="icons/sidebar-open.svg" alt=""> }
+      @else { <img src="icons/sidebar-close.svg" alt=""> }
+    </button>
   </div>
 </main>
