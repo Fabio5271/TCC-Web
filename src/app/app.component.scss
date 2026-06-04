@@ -11,3 +11,15 @@
   margin-bottom: 0.5rem;
   border-radius: 0 0.5rem 0.5rem 0;
 }
+
+@media (width < 640px) {
+  .sidebar-toggle {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    scale: 120%;
+  }
+}
