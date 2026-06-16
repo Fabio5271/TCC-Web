@@ -18,6 +18,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/external-links/external-links.component').then(m => m.ExternalLinksComponent)
     },
     {
+        path: 'references',
+        loadComponent: () => import('./pages/references/references.component').then(m => m.ReferencesComponent)
+    },
+    {
         path: '**',
         redirectTo: 'about'
     }
